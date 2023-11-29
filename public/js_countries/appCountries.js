@@ -13,6 +13,7 @@ const doApi = async() => {
 
     let resp = await axios.get(url);
     console.log(resp.data);
+    console.log(url);
     createTable(resp.data)
   }
   catch(err){

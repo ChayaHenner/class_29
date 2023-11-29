@@ -11,9 +11,9 @@ const doApi = async() => {
   let url = "https://first-webserver-chaya.onrender.com/countries";//?perPage=20&reverse=yes
   try{
 
-    let resp = await axios.get(url);
+    let resp = await axios.get("https://first-webserver-chaya.onrender.com/countries");
     console.log(resp.data);
-    console.log(url);
+    console.log("https://first-webserver-chaya.onrender.com/countries");
     createTable(resp.data)
   }
   catch(err){
